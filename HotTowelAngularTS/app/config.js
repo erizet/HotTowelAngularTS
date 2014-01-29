@@ -1,3 +1,5 @@
+/// <reference path="../scripts/typings/toastr/toastr.d.ts" />
+/// <reference path="../scripts/typings/angularjs/angular.d.ts" />
 'use strict';
 var app = angular.module('app');
 
