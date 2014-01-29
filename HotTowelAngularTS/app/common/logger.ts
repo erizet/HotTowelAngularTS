@@ -3,18 +3,12 @@
 /// <reference path='../../Scripts/typings/angularjs/angular-resource.d.ts'/>
 /// <reference path="../../Scripts/typings/toastr/toastr.d.ts" />
 
-interface ILogFunction {
-
-}
-
 interface Ilogger {
     getLogFn: (moduleId: string, fnName: string) => any;
     log: (message: string, data: any, source: string, showToast: boolean) => void;
     logError: (message: string, data: any, source: string, showToast: boolean) => void;
     logSuccess: (message: string, data: any, source: string, showToast: boolean) => void;
     logWarning: (message: string, data: any, source: string, showToast: boolean) => void;
-    /*
-    logIt: (message: string, data: any, source: string, showToast: boolean, toastType: string) => void;*/
 }
 
 class logger implements Ilogger {
@@ -80,6 +74,4 @@ class logger implements Ilogger {
     }
 }
 
-angular.module('common').factory(logger.serviceId, ['$log',
-    ($log) => new logger($log)]
-    );
+angular.module('common').factory(logger.serviceId, ['$log', ($log) => new logger($log)]);

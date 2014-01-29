@@ -9,20 +9,14 @@ var app = angular.module('app');
 app.constant('routes', getRoutes());
 
 // Configure the routes and route resolvers
-app.config(['$routeProvider', 'routes', routeConfigurator]);
+app.config(['$routeProvider', 'routes', ($routeProvider: ng.route.IRouteProvider, routes: IHotTowelRoute[]) => {
 
+    routes.forEach(r=> {
+        $routeProvider.when(r.url, r.config);
+    });
 
-class routeConfigurator {
-    constructor(private $routeProvider: ng.route.IRouteProvider, private routes: IHotTowelRoute[]) {
-        console.log("routeConfigurator");
-
-        routes.forEach(r=> {
-            $routeProvider.when(r.url, r.config);
-        });
-
-        $routeProvider.otherwise({ redirectTo: '/' });
-    }
-}
+    $routeProvider.otherwise({ redirectTo: '/' });
+}]);
 
 interface IHotTowelRouteSettings {
     nav: number;
@@ -32,6 +26,7 @@ interface IHotTowelRouteSettings {
 interface IHotTowelRouteConfig extends ng.route.IRoute {
     title: string;
     settings: IHotTowelRouteSettings;
+    current?: IHotTowelRouteConfig;
 }
 
 interface IHotTowelRoute {
@@ -40,7 +35,7 @@ interface IHotTowelRoute {
 }
 
 // Define the routes 
-function getRoutes() {
+function getRoutes(): IHotTowelRoute[] {
     return [
         {
             url: '/',
@@ -52,7 +47,8 @@ function getRoutes() {
                     content: '<i class="fa fa-dashboard"></i> Dashboard'
                 }
             }
-        }, {
+        },
+        {
             url: '/admin',
             config: {
                 title: 'admin',

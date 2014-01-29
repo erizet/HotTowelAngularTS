@@ -66,9 +66,7 @@ var logger = (function () {
     return logger;
 })();
 
-angular.module('common').factory(logger.serviceId, [
-    '$log',
-    function ($log) {
+angular.module('common').factory(logger.serviceId, ['$log', function ($log) {
         return new logger($log);
     }]);
 //# sourceMappingURL=logger.js.map

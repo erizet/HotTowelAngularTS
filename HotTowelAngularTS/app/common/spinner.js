@@ -1,7 +1,6 @@
 ﻿/// <reference path="../app.ts" />
 /// <reference path="common.ts" />
 /// <reference path='../../Scripts/typings/angularjs/angular.d.ts'/>
-/// <reference path='../../Scripts/typings/angularjs/angular-resource.d.ts'/>
 
 var spinnerFactory = (function () {
     function spinnerFactory($rootScope, common, commonConfig) {
