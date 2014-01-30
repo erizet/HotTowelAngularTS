@@ -72,6 +72,8 @@
     <Content Include="app\config.org.js" />
     <Content Include="app\config.route.js" />
     <Content Include="app\config.route.org.js" />
+    <Content Include="app\dashboard\dashboard.js" />
+    <Content Include="app\services\datacontext.js" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
@@ -82,6 +84,8 @@
     <Content Include="app\admin\admin.js.map" />
     <Content Include="app\config.route.js.map" />
     <Content Include="app\common\spinner.js.map" />
+    <Content Include="app\dashboard\dashboard.js.map" />
+    <Content Include="app\services\datacontext.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -101,14 +105,14 @@
     <Content Include="app\config.exceptionHandler.js" />
     <Content Include="app\config.js" />
     <Content Include="app\dashboard\dashboard.html" />
-    <Content Include="app\dashboard\dashboard.js" />
+    <Content Include="app\dashboard\dashboard.org.js" />
     <Content Include="app\layout\shell.html" />
     <Content Include="app\layout\shell.js" />
     <Content Include="app\layout\sidebar.html" />
     <Content Include="app\layout\sidebar.org.js" />
     <Content Include="app\layout\topnav.html" />
     <Content Include="app\layout\widgetheader.html" />
-    <Content Include="app\services\datacontext.js" />
+    <Content Include="app\services\datacontext.org.js" />
     <Content Include="app\services\directives.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -180,7 +184,9 @@
     <TypeScriptCompile Include="app\common\spinner.ts" />
     <TypeScriptCompile Include="app\config.route.ts" />
     <TypeScriptCompile Include="app\config.ts" />
+    <TypeScriptCompile Include="app\dashboard\dashboard.ts" />
     <TypeScriptCompile Include="app\layout\sidebar.ts" />
+    <TypeScriptCompile Include="app\services\datacontext.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-mocks.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-resource.d.ts" />

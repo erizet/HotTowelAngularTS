@@ -1,4 +1,4 @@
-/// <reference path='../Scripts/typings/angularjs/angular.d.ts'/>
+﻿/// <reference path='../Scripts/typings/angularjs/angular.d.ts'/>
 /// <reference path='../Scripts/typings/angularjs/angular-resource.d.ts'/>
 'use strict';
 // Create the module and define its dependencies.

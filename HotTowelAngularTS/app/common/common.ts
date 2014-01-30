@@ -3,6 +3,7 @@
 /// <reference path='../../Scripts/typings/angularjs/angular-resource.d.ts'/>
 
 interface Icommon {
+    $q: ng.IQService;
     $broadcast(): ng.IAngularEvent;
     activateController(promises, controllerId): ng.IPromise<void>;
     createSearchThrottle(viewmodel, list, filteredList, filter, delay): void;
@@ -36,7 +37,7 @@ class common implements Icommon {
 
     private throttles = {};
 
-    constructor(private $q: ng.IQService, private $rootScope: ng.IRootScopeService, private $timeout: ng.ITimeoutService, private commonConfig: any, public logger: Ilogger) {
+    constructor(public $q: ng.IQService, private $rootScope: ng.IRootScopeService, private $timeout: ng.ITimeoutService, private commonConfig: any, public logger: Ilogger) {
     }
 
     activateController(promises, controllerId): ng.IPromise<void> {
