@@ -180,3 +180,4 @@ $RECYCLE.BIN/
 /packages/Q.1.0.0
 /packages/Q.TypeScript.DefinitelyTyped.0.2.4/Content/Scripts/typings/q
 /packages/Q.TypeScript.DefinitelyTyped.0.2.4
+*.map
