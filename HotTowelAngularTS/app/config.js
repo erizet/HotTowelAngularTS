@@ -20,7 +20,11 @@ var config = {
     docTitle: 'HotTowel: ',
     events: events,
     remoteServiceName: remoteServiceName,
-    version: '2.1.0'
+    version: '2.1.0',
+    imageSettings: {
+        imageBasePath: "",
+        unknownPersonImageSource: ""
+    }
 };
 
 app.value('config', config);

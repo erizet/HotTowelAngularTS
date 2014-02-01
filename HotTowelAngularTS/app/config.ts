@@ -22,20 +22,30 @@ var events: Ievents = {
     spinnerToggle: 'spinner.toggle'
 };
 
+interface IconfigImageSettings {
+    imageBasePath: string;
+    unknownPersonImageSource: string;
+}
+
 interface Iconfig {
     appErrorPrefix: string;
     docTitle: string;
     events: Ievents;
     remoteServiceName: string;
     version: string;
+    imageSettings: IconfigImageSettings;
 }
 
 var config: Iconfig = {
-    appErrorPrefix: '[HT Error] ', //Configure the exceptionHandler decorator
+    appErrorPrefix: '[HT Error] ', // Configure the exceptionHandler decorator
     docTitle: 'HotTowel: ',
     events: events,
     remoteServiceName: remoteServiceName,
-    version: '2.1.0'
+    version: '2.1.0',
+    imageSettings: {
+        imageBasePath: "", // NOT YET USED
+        unknownPersonImageSource: "" // NOT YET USED
+    }
 };
 
 app.value('config', config);

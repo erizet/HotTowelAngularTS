@@ -2,6 +2,17 @@
 /// <reference path="common.ts" />
 /// <reference path='../../Scripts/typings/angularjs/angular.d.ts'/>
 
+interface IspinnerOptions {
+    radius: number;
+    lines: number;
+    length: number;
+    width: number;
+    speed: number;
+    corners: number;
+    trail: number;
+    color: string;
+}
+
 interface IspinnerFactory {
     spinnerHide() : void;
     spinnerShow() : void;

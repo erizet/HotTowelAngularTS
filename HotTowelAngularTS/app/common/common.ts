@@ -69,7 +69,7 @@ class common implements Icommon {
         }
 
         // create the filtering function we will call from here
-        var filterFn = function () {
+        var filterFn = () => {
             // translates to ...
             // vm.filteredSessions 
             //      = vm.sessions.filter(function(item( { returns vm.sessionFilter (item) } );
@@ -78,7 +78,7 @@ class common implements Icommon {
             });
         };
 
-        return (function () {
+        return (() => {
             // Wrapped in outer IFFE so we can use closure 
             // over filterInputTimeout which references the timeout
             var filterInputTimeout;
