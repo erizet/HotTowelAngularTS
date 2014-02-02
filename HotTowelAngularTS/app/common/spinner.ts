@@ -2,6 +2,8 @@
 /// <reference path="common.ts" />
 /// <reference path='../../Scripts/typings/angularjs/angular.d.ts'/>
 
+'use strict';
+
 interface IspinnerOptions {
     radius: number;
     lines: number;
@@ -14,8 +16,8 @@ interface IspinnerOptions {
 }
 
 interface IspinnerFactory {
-    spinnerHide() : void;
-    spinnerShow() : void;
+    spinnerHide(): void;
+    spinnerShow(): void;
 }
 
 class spinnerFactory implements IspinnerFactory {
@@ -37,4 +39,4 @@ class spinnerFactory implements IspinnerFactory {
 
 commonModule.factory(spinnerFactory.serviceId, ['rootScope', 'common', 'commonConfig',
     ($rootScope, common, commonConfig) => new spinnerFactory($rootScope, common, commonConfig)]
-);
+    );

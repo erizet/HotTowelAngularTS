@@ -58,7 +58,6 @@ class dashboard implements Idashboard {
             this.people = data;
         });
     }
-
 }
 
 app.controller(dashboard.controllerId, [

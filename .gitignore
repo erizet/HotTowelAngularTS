@@ -181,3 +181,17 @@ $RECYCLE.BIN/
 /packages/Q.TypeScript.DefinitelyTyped.0.2.4/Content/Scripts/typings/q
 /packages/Q.TypeScript.DefinitelyTyped.0.2.4
 *.map
+/packages/AngularJS.Animate.1.2.10
+/packages/AngularJS.Core.1.2.10
+/packages/AngularJS.Resource.1.2.10
+/packages/AngularJS.Route.1.2.10
+/packages/AngularJS.Route.1.2.10/content/scripts/angular-route.js
+/packages/AngularJS.Sanitize.1.2.10
+/packages/angularjs.TypeScript.DefinitelyTyped.0.8.7
+/packages/angularjs.TypeScript.DefinitelyTyped.0.8.7/Content/Scripts/typings/angularjs/angular-cookies.d.ts
+/packages/bootstrap.3.1.0
+/packages/jQuery.2.1.0
+/packages/jquery.TypeScript.DefinitelyTyped.0.6.7
+/packages/jquery.TypeScript.DefinitelyTyped.0.6.7/Content/Scripts/typings/jquery/jquery.d.ts
+/packages/Moment.js.2.5.1/Content/Scripts
+*.nupkg

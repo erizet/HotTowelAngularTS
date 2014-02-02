@@ -3,6 +3,8 @@
 /// <reference path='../../Scripts/typings/angularjs/angular-resource.d.ts'/>
 /// <reference path="../../Scripts/typings/toastr/toastr.d.ts" />
 
+'use strict';
+
 interface Ilogger {
     getLogFn: (moduleId: string, fnName: string) => any;
     log: (message: string, data: any, source: string, showToast: boolean) => void;

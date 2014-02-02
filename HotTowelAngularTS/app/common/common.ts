@@ -2,6 +2,8 @@
 /// <reference path='../../Scripts/typings/angularjs/angular.d.ts'/>
 /// <reference path='../../Scripts/typings/angularjs/angular-resource.d.ts'/>
 
+'use strict';
+
 interface Icommon {
     $q: ng.IQService;
     $broadcast(): ng.IAngularEvent;

@@ -2,6 +2,8 @@
 /// <reference path='../../Scripts/typings/angularjs/angular.d.ts'/>
 /// <reference path="../../scripts/typings/angularjs/angular-route.d.ts" />
 
+'use strict';
+
 interface Isidebar {
     isCurrent(route: IHotTowelRoute): string;
 
