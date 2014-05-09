@@ -1,5 +1,5 @@
 /**
- * @license AngularJS v1.2.10
+ * @license AngularJS v1.2.9
  * (c) 2010-2014 Google, Inc. http://angularjs.org
  * License: MIT
  */
@@ -834,10 +834,7 @@ angular.module('ngAnimate', ['ng'])
         }
 
         function fireDoneCallbackAsync() {
-          async(function() {
-            fireDOMCallback('close');
-            doneCallback && doneCallback();
-          });
+          doneCallback && async(doneCallback);
         }
 
         //it is less complicated to use a flag than managing and cancelling

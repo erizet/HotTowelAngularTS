@@ -1,7 +1,7 @@
 ﻿/// <reference path="../app.ts" />
 /// <reference path="common.ts" />
 /// <reference path='../../Scripts/typings/angularjs/angular.d.ts'/>
-
+'use strict';
 var spinnerFactory = (function () {
     function spinnerFactory($rootScope, common, commonConfig) {
         var _this = this;

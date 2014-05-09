@@ -1,7 +1,7 @@
 /// <reference path="../app.ts" />
 /// <reference path='../../Scripts/typings/angularjs/angular.d.ts'/>
 /// <reference path="../../scripts/typings/angularjs/angular-route.d.ts" />
-
+'use strict';
 var sidebar = (function () {
     function sidebar($route, config, routes) {
         this.$route = $route;

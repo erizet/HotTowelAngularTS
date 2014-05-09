@@ -176,13 +176,12 @@ var ccScrollToTop = (function () {
             $win.scroll(function () {
                 $win.scrollTop() > 300 ? element.slideDown() : element.slideUp();
             });
-
-            element.find(function (eventObject) {
-                //element.preventDefault(); ???
-                // Learning Point: $anchorScroll works, but no animation
-                //$anchorScroll();
-                $('body').animate({ scrollTop: 0 }, 500);
-            });
+            //element.find((eventObject: JQuery) => {
+            //    //element.preventDefault(); ???
+            //    // Learning Point: $anchorScroll works, but no animation
+            //    //$anchorScroll();
+            //    $('body').animate({ scrollTop: 0 }, 500);
+            //});
         };
     }
     ccScrollToTop.directiveId = "ccScrollToTop";

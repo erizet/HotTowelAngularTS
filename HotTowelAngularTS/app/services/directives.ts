@@ -13,10 +13,12 @@ class ccImgPerson implements ng.IDirective {
     static directiveId: string = "ccImgPerson";
     restrict: string = "A";
 
-    basePath: string = config.imageSettings.imageBasePath;
-    unknownImage: string = config.imageSettings.unknownPersonImageSource;
+    basePath: string;
+    unknownImage: string;
 
     constructor(private config: Iconfig, private $window: ng.IWindowService) {
+        this.basePath = config.imageSettings.imageBasePath;
+        this.unknownImage  = config.imageSettings.unknownPersonImageSource;
     }
 
     link(scope: ng.IScope, element: ng.IAugmentedJQuery, attrs: ng.IAttributes) {
@@ -169,13 +171,13 @@ class ccScrollToTop implements ng.IDirective {
 
         $win.scroll(() => { $win.scrollTop() > 300 ? element.slideDown() : element.slideUp(); });
 
-        element.find((eventObject: JQuery) => {
-            //element.preventDefault(); ???
+        //element.find((eventObject: JQuery) => {
+        //    //element.preventDefault(); ???
 
-            // Learning Point: $anchorScroll works, but no animation
-            //$anchorScroll();
-            $('body').animate({ scrollTop: 0 }, 500);
-        });
+        //    // Learning Point: $anchorScroll works, but no animation
+        //    //$anchorScroll();
+        //    $('body').animate({ scrollTop: 0 }, 500);
+        //});
     }
 }
 

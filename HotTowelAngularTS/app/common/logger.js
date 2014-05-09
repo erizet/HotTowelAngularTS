@@ -2,7 +2,7 @@
 /// <reference path='../../Scripts/typings/angularjs/angular.d.ts'/>
 /// <reference path='../../Scripts/typings/angularjs/angular-resource.d.ts'/>
 /// <reference path="../../Scripts/typings/toastr/toastr.d.ts" />
-
+'use strict';
 var logger = (function () {
     function logger($log) {
         var _this = this;

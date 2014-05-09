@@ -1,7 +1,7 @@
 /// <reference path="../app.ts" />
 /// <reference path='../../Scripts/typings/angularjs/angular.d.ts'/>
 /// <reference path="../../scripts/typings/angularjs/angular-route.d.ts" />
-
+'use strict';
 var shell = (function () {
     function shell($rootScope, common, config) {
         var _this = this;
